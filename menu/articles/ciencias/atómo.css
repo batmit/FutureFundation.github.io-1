@@ -1,7 +1,6 @@
 body{
 
     text-align: center;
-
     border: black 2px solid;
 
     border-radius: 0.8rem;
@@ -13,6 +12,7 @@ body{
 
 
 img{
+
     text-align: center;
 }
 
@@ -30,15 +30,3 @@ a:hover{
     background-color:red;
 
 }
-
-@media (max-width: 900px) {
-
-
-    a{
-
-        display: block;
-
-    }   
-
-}
-
