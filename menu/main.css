@@ -24,9 +24,14 @@ a{
     border: 2px solid black;
 
     border-radius: 0.8rem;
+
+    box-sizing: border-box;
+
     padding: 0.5rem;
 
     line-height: 5;
+
+    margin: 2px;
 
 }
 
