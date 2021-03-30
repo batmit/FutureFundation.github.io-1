@@ -7,6 +7,12 @@
    
 }
 
+body{
+
+    background-color: darkgrey;
+
+}
+
 *  {
     margin:0;
     padding:0;
@@ -29,9 +35,9 @@ header{
 
     border: 2px solid black;
 
-    font-family: 'DotGothic16', sans-serif;
-
     margin: 3rem;
+
+    background-color: white;
     
 
 }
@@ -45,6 +51,8 @@ header{
 
 
     margin: 2rem;
+
+    background-color: white;
 
 
 }
@@ -81,6 +89,7 @@ a{
     font-size: 1.3rem;
     display: block;
 
+
 }
 
 
@@ -99,4 +108,25 @@ a{
 
     font-size: 2rem;
 
+    background-color: white;
+
 }
+
+footer{
+
+    margin: 3rem;
+
+    text-align: center;
+
+    border: 5px solid black;
+
+    border-radius: 0.8rem;
+
+    padding: 2rem;
+
+    background-color: white;
+
+
+}
+
+
