@@ -1,6 +1,6 @@
 body{
 
-    background-image: url(https://images.unsplash.com/photo-1555892727-55b51e5fceae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&w=1000&q=80);
+    background-image: url(https://media.istockphoto.com/photos/cross-at-sunset-crucifixion-of-jesus-christ-picture-id1049887484?k=6&m=1049887484&s=170667a&w=0&h=TTvrnCEJT7rzO5Pde78_heOf2zOzUuD5P0IA61vw9XY=);
 
 }
 
@@ -8,4 +8,10 @@ body{
 
     background-color: white;
 
+}
+
+#citacao{
+    margin: 4rem;
+
+    border: 2px solid red;
 }
