@@ -6,7 +6,7 @@ body{
 
     border-radius: 0.8rem;
 
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
     background-color: darkgrey;
 
@@ -25,9 +25,15 @@ body{
 
 img{
     text-align: center;
+    justify-content: center;
+
 }
 
+p{
 
+    font-family: 'Poppins';
+
+}
 a{
     border: 2px solid black;
 
