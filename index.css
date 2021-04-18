@@ -7,6 +7,28 @@
    
 }
 
+audio {
+
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    border: black 2px solid;
+    border-radius: 0.8rem;
+
+}
+
+#audio{
+
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    padding: auto;
+    text-align: center;
+}
+
 body{
 
     background-color: darkgrey;
@@ -39,6 +61,7 @@ header{
 
     background-color: white;
     
+    padding: 1rem;
 
 }
 
@@ -128,5 +151,3 @@ footer{
 
 
 }
-
-
