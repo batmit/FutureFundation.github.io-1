@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: futurefundation.github.io
+Token: 9b3a308f20297ac48fc963f4f577c237b7df4794c3e13bd99d80f6a0abedcc41
