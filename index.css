@@ -4,7 +4,6 @@
 
     margin: 2rem;
 
-   
 }
 
 audio {
@@ -14,7 +13,7 @@ audio {
     align-items: center;
     justify-content: center;
     margin: 2rem;
-    border: black 2px solid;
+    border: rgb(177, 174, 17) 2px solid;
     border-radius: 0.8rem;
 
 }
@@ -29,9 +28,16 @@ audio {
     text-align: center;
 }
 
+img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body{
 
-    background-color: darkgrey;
+    background-color: #194caa;
 
 }
 
@@ -55,7 +61,7 @@ header{
 
     border-radius: 0.8rem;
 
-    border: 2px solid black;
+    border: 2px solid rgb(177, 174, 17);
 
     margin: 3rem;
 
@@ -63,14 +69,26 @@ header{
     
     padding: 1rem;
 
+    text-decoration-color: blue;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
 }
+
+header h1 {
+
+    color: rgb(177, 174, 17);
+
+}
+
 
 #cabecalho{
 
 
     border-radius: 0.8rem;
 
-    border: 2px solid black;
+    border: 2px solid rgb(177, 174, 17);
 
 
     margin: 2rem;
@@ -121,7 +139,7 @@ a{
 
     border-radius: 0.8rem;
 
-    border: 2px solid black;
+    border: 2px solid rgb(177, 174, 17);
 
     padding: 2rem;
 
@@ -141,7 +159,7 @@ footer{
 
     text-align: center;
 
-    border: 5px solid black;
+    border: 5px solid rgb(177, 174, 17);
 
     border-radius: 0.8rem;
 
@@ -150,4 +168,16 @@ footer{
     background-color: white;
 
 
+}
+
+footer h2, p {
+
+    color: rgb(177, 174, 17);
+}
+
+@media (max-width: 900px){
+    #menu ul li a{
+        display: block;
+        text-align: center;
+    }
 }

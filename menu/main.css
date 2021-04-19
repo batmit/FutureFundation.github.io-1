@@ -8,7 +8,7 @@ body{
 
     font-family: 'Poppins', sans-serif;
 
-    background-color: darkgrey;
+    background-color: #194caa;
 
 
 }
@@ -52,13 +52,15 @@ a{
 
 a:hover{
 
-    background-color:red;
+    background-color:rgb(80, 158, 231);
 
 }
 
 h1{
 
     margin-bottom: 3rem;
+
+    color: rgb(177, 174, 17);
 
 }
 
