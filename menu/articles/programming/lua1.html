@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Lua</title>
+    <link rel="stylesheet" href="/menu/main.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>Aula 1 - Lua</h1>
+            <h3>writer: Daniel Matos
+            </h3>
+        </header>
+
+        <strong>Pré-Instalação:</strong>
+        <p>Recomendo visitar o site: <a href="https://www.lua.org/">Lua</a> para entender como funciona a linguagem, ver de onde veio, tem uns materiais grátis e é bom ver que ela é puramente Brazuca, foi feita e é mantida pela Puc do Rio de Janeiro. Olha que beleza.</p>
+        <p>Veja também onde ela pode ser usada, ela geralmente serve como uma linguagem secundária para servidores e implementações das mais variadas. Um dos jogos que usam Lua como linguagem secundária é World of Warcraft. (sim, esse jogão super complicado para ser desenvolvido usa uma linguagem brasileira como linguagem secundária, deu orgulho ou não?)</p>
+
+        <strong>Instalação:(Para Windowns)</strong>
+        <p>Link para instalação: <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazJKX3ZYR1pkeXhwR09Zald0d2p5ZEgtaWpzZ3xBQ3Jtc0tsZ1g2ZVo0UzVRNFFmY2dtRGRtcXJWRGRaU2ltbVNPZWlHZGNwT3U3MVNrWEJHNG13Q0VpM1VqeTZBN05UWGl5eW1LMzJFR1hXbDFfQUdBaEJ5VjdoVDhvLW1ONHZ5ZFE5b3d0RGpqbFBqbUxHQnpBYw&q=https%3A%2F%2Fgithub.com%2Frjpcomputing%2Fluaforwindows%2Freleases">Baixar Lua- GitHub</a></p>
+        <p>Importante: A instalação é normal e qualquer um pode fazer, mas é importante que na parte que perguntar se você quer instalar a IDE clicar em sim, para que possa baixar o aplicativo que será usado para programar( ou codar, como é comumente chamado)</p>
+        <p>Assim que baixar vai ter um manual de como usar Lua, você pode dar uma breve olhada, mas é difícil aprender tudo que fala lá em 20 minutos. </p>
+
+        <strong>Bora codar</strong>
+        <p>Depois de ter baixado procure pelo aplicativo SciTe. Ele é muito bom, corrige os erros e serve também para C e C++.</p>
+        <p>Seria bom escolher uma pasta e salvar o primeiro arquivo nela.</p>
+        <p></p>
+        <p>Agora vamos entender o sistema de variáveis. Assim como no python você usa um valor para receber, usando =, uma variável numérica, uma nula ou uma string</p>
+        <strong>String:</strong>
+        <p>--------------------------------------------</p>
+        <p>a = "batata"</p>
+        <p>b = 'batata'</p>
+        <p>c = [[
+            <br>
+            batata <br>
+            ]]</p>
+
+        <p>--------------------------------------------</p>
+        <p>Podemos usar aspas simples e duplas. No terceiro exemplo vemos [] para gerar uma quebra de linha. Você pode escrever qualquer coisa ali e inclusive quebrar linha que vai aparecer.</p>
+
+        <p>Até agora você somente usou variáveis para salvar valores strings. Uma função para ver o resultado é a função print, veja abaixo:</p>
+
+        <p>print(a) <br> print(b) <br> print(c)</p>
+
+        <p>Assim que você apertar o botão azul para iniciar o programa achará esse resultado: </p>
+
+        <img src="/images/lua1.PNG" alt="Resultado no terminal">
+
+        <p>Veja quão útil é o uso de [ [ ] ]. Vá experimentando as strings. A string é toda variável que está entre "" ou [ [ ] ]. Pode usar nomes, palavras, mas números veremos mais a seguir.</p>
+
+        <strong>Números</strong>
+        <p>As variáveis do tipo numérico são números, tanto inteiros quanto não inteiros e até mesmo alfanumérico. Veja os exemplos: </p>
+
+        <p>--------------------------------------------</p>
+        <p>d = 40 --inteiro</p>
+        <p>e = 40.5 --não inteiro</p>
+        <p>f = 30.5245</p>
+        <p>--------------------------------------------</p>
+
+        <p>Usa a função print com eles e continua. O -- é um comentário, tudo que você colocar depois não vai ser considerado na hora de executar o código.</p>
+
+        <p>As contas em Lua são:</p>
+
+        <p> + = soma <br> - = subtração <br> * = multiplicação <br> ** = expoente(2**2 = 2 elevado a 2) <br> / = divisão <br> <br>Vá treinando (exemplo = print(d / e)), e tente usar o sinal de soma para as strings. Vai ver que vai somente juntar os dois, para realizar operações deve usar apenas números. Você também pode salva uma conta em uma variável, como:</p>
+
+        <p>soma = f / d</p>
+
+        <strong>Nulos</strong>
+
+        <p>Os valores nulos são, nulos. Você pode usar das duas formas:</p>
+
+        <p>nulo = nil <br>nulo = string4 </p>
+
+        <p>Veja que string4 é uma variável, não uma string. Como essa variável não existe vai receber nulo. Sim, você pode fazer variáveis receber outras variáveis, como:</p>
+
+        <p>teste = a + b -- vai receber a soma entre a e b <br>a, b = b, c --vai substituir os valores. </p>
+
+        <p>Vá testando aí e vou colcoar algumas dicas em baixo:</p>
+
+        <a href="https://www.lua.org/manual/5.1/pt/manual.html">Manual da Puc sobre Lua</a>
+
+        <a href="https://www.youtube.com/watch?v=qxoMNzpI_2A">Vídeo muito bom sobre </a>
+
+        <a href="/index.html">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
