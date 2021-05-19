@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço do Bitcoin atualizado</title>
+    <link rel="stylesheet" href="/menu/main.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>
+                Preço do Bitcoin atualizado
+            </h1>
+            <h3>
+                writer: Daniel Matos
+            </h3>
+        </header>
+        <p>Faremos nada mais nada menos que um web scraping simples. Usaremos as bibliotecas: <strong>requests</strong> e <strong>bs4</strong>. </p>
+        <p>O site utilizado será: <a href="http://www.coindesk.com/price/bitcoin">Coin Desk</a>. Também pode usar outros sites, apenas preste atenção no processo.  </p>
+        <p>Vamos importar as bibliotecas e definir a url utilizada: </p>
+        <p>----------------------------------------------</p>
+        <p>import requests</p>
+        <p>from bs4 import BeautifulSoup as bs</p>
+        <p>url = 'http://www.coindesk.com/price/bitcoin'</p>
+        <p>----------------------------------------------</p>
+
+        <p>Vamos então fazer com que o requests acesse a url desejada com o comando: </p>
+        <p>----------------------------------------------</p>
+        <p>r = requests.get(url)</p>
+        <p>----------------------------------------------</p>
+        <p>Então vamos pegar html do documento, os dados nele presentes com o comando: </p>
+        <p>----------------------------------------------</p>
+        <p>soup = bs(r.content, "html.parser")</p>
+        <p>----------------------------------------------</p>
+        <p>Agora que temos os dados da página vamos selecionar qual iremos utilizar. Vá no site desejado, click com o botão direito e pressione inspecionar. Click no botão mostrado abaixo: </p>
+
+        <img src="/images/selecionar.PNG" alt="selecionar">
+
+        <p>Então selecione o que você quer, click em cima de um número ou de um botão, ou uma imagem. Nesse caso iremos clicar no número embaixo do price. Veja o resultado abaixo: </p>
+
+        <img src="/images/htmlselecionado.PNG" alt="html selecionado">
+        <p>Vemos que uma parte do html foi selecionado. Então escreveremos o código abaixo, lembrando que se o seu site for diferente os valores vão mudar. </p>
+        <p>----------------------------------------------</p>
+        <p>price = soup.find("div", {"class":"price-large"})</p>
+        <p>----------------------------------------------</p>
+
+        <p>Iremos colocar uma "div" primeiro porque está escrito div na imagem acima. Depois do div tem uma classe. Então colocaremos entre chaves "class": e o nome da class em parenteses. Pode ter ao invés de div um span, aí você tira o div e coloca span. Pode ser que ao invés de class se use uma id, aí você muda de acordo com cada situação, e o valor da class vai sempre mudar. </p>
+
+        <p>Para mostrar o valor na tela é só dar um print(price.text). Text porque vai mostrar só o texto. </p>
+        <p>----------------------------------------------</p>
+        <p>print(price.text)</p>
+        <p>----------------------------------------------</p>
+        <p>Código Completo: </p>
+        <img src="/images/códigocompleto.PNG" alt="código completo">
+        <p>Resultado: </p>
+        <img src="/images/resultadobitcoin.PNG" alt="valor do bitcoin">
+
+        <p>Você pode usar a técnica anterior para praticamente qualquer coisa. </p>
+        <p>Veja um vídeo complementar muito bom: <a href="https://www.youtube.com/watch?v=Vxl5jUltHBo&t=197s">Vídeo do Código Fonte</a></p>
+        
+        <p>O PY tá on :)</p>
+        
+        <a href="/index.html">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
