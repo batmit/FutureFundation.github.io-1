@@ -64,6 +64,7 @@ h1{
 
 }
 
+
 @media (max-width: 900px) {
 
 
@@ -74,6 +75,32 @@ h1{
         padding: 1rem;
 
     }   
+
+}
+
+@media (prefers-color-scheme: dark) {
+    #all{
+
+        background-color: black;
+    
+    }
+
+    h1{
+        color: white
+    }
+
+    p{
+        color: white;
+    }
+
+    a{
+        background-color: aqua;
+    }
+
+    h3{
+        color: white;
+    }
+
 
 }
 

@@ -1,0 +1,26 @@
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  
+.switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+.switch--shadow + label {
+    padding: 2px;
+    width: 120px;
+    height: 60px;
+    background-color: #dddddd;
+    border-radius: 60px;
+  }
+.switch--shadow:checked + label:before {
+    background-color: #8ce196;
+  }
+.switch--shadow:checked + label:after {
+    transform: translateX(60px);
+  }
