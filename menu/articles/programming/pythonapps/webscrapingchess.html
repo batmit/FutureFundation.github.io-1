@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping com Chess</title>
+    <link rel="stylesheet" href="/menu/main.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>
+                Web Scraping com Chess
+            </h1>
+            <h3>
+                writer: Daniel Matos
+            </h3>
+        </header>
+        <p>Vamos aprender como abrir o app do chess.com com python. </p>
+        <p>Primeiramente você deve baixar a biblioteca selenuim, só um pip install seleniunm. Depois você vai importar o webdriver do selenium e seleciona a url desejada a abrir, pode ser outras além do chess.com </p>
+        <p>------------------------</p>
+        <p>From selenium import webdriver</p>
+        <p>url = 'https://www.chess.com/play'</p>
+        <p>------------------------</p>
+        <p>Você então vai no site <a href="https://sites.google.com/chromium.org/driver/">Chrome webdriver</a> e click para baixar o primero link da página. Para usar o webscraping do jeito que vamos utilizar se deve usar uma outra versão do chrome, se você estiver utilizando outro navegador busque o nome do navegador webdriver. Você DEVE baixar e colocar o navegador na pasta que está seu progama em python. </p>
+        <p>Depois disso vocÊ vai criar a função browser, que vai abrir o navegador selecionado usando a url selecionada.</p>
+        <p>------------------------</p>
+        <p>
+            browser = webdriver.Chrome() <br>
+            browser.get(url)</p>
+        <p>------------------------</p>
+
+        <p>Veja que usei webdriver.Chrome() porque estou usando o webdriver do Chrome, se você for usar outro navegador, o que não recomendo, você deve mudar o nome. </p>
+
+        <p>Pode executar o progama agora e veja o que acontece. Pode demorar um tempo mas você vai ver que vai abrir. Isso é tudo? Não.</p>
+
+        <p>Vá para o site, click com o botão direito e inspecionr. Click no botão mostrado abaixo: </p>
+        <img src="/images/selecionar.PNG" alt="selecionar">
+        <p>Depois click em algum botão, no caso do chess.com vamos apertar nese: </p>
+        <img src="/images/playonline.PNG" alt="play online">
+        <p>Vai ser selecionado essa parte do html: </p>
+        <img src="/images/maisoumenos.PNG" alt="parte do html para jogar">
+        <p>você então vai clicar nessa parte com o botão direito e selecionar copy e copy Xpath. Você vai então usar um comando para buscar por Xpath e vai colocar o que foi copiado dentro do parênteses entre ''.</p> 
+        <p>------------------------</p>
+        <p>browser.find_element_by_xpath('//*[@id="board-layout-sidebar"]/div/div[2]/div/a[1]').click()</p>
+        <p>------------------------</p>
+
+        <p>No comando acima usei o browser.find_element_by_xpath('') e então coloquei o Xpath do botão dentro, você pode fazer isso com outros botões em outros sites. Mas o que isso faz na prática, você me pergunta? Percebeu o .clik() no final? Sim, isso mesmo, vai clicar. Execute e progama, depois leia a linha de baixo, ainda não acabou.</p>
+
+        <p>Ainda temos que apertar o botão mostrado abaixo: </p>
+        <img src="/images/apertabotao.PNG" alt="apertar botão">
+
+        <p>Você deve fazer a mesma coisa de antes, vou apenas te dar o código da próxima linha: </p>
+        <p>------------------------</p>
+        <p>browser.find_element_by_xpath('//*[@id="board-layout-sidebar"]/div/div[2]/div/div[1]/div[1]/div/button').click()</p>
+        <p>------------------------</p>
+
+        <p>É a mesma coisa. Masss, depois de executar o comando você vai ver que tem que apertar mais um botão para funcionar. </p>
+        <img src="/images/guest.PNG" alt="play as guest">
+        <p>Você vai ter que apertar o play as guest, é a mesma coisa dos outros.</p>
+        <p>------------------------</p>
+        <p>browser.find_element_by_xpath('//*[@id="guest-button"]').click()
+        </p>
+        <p>------------------------</p>
+        <p>Execute o comando e veja que começou uma partida. Isso é demais. Pode fazer em qualquer site, tente ser criativo. </p>
+        <p>O código completo ficou: </p>
+        <img src="/images/completo.PNG" alt="código completo">
+        <a href="/index.html">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
