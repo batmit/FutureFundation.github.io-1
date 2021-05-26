@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Lua</title>
+    <link rel="stylesheet" href="/menu/main.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>
+                Aula 3 - Lua
+            </h1>
+            <h3>
+                writer: Daniel Matos
+            </h3>
+        </header>
+        <strong>
+            while
+        </strong>
+        <p>O while em Lua é bem parecido com o python. Usamos primeiramente o while (minúsculo) + condição + do + end no final.</p>
+        <p>Veja o exemplo a seguir: </p>
+        <img src="/images/while.PNG" alt="repetição while">
+        <p>No temos string4 recebendo bool, que não existe logo vai recebel nill, a = 100 e b = 10. Então a repetição começa com enquanto b for menor que a faça... Dentro da repetição temos b = b + 1, vai sempre aumentando 1. Então temos uma condição: se b == 50 então a string4 que antes recebial nill vai passar a receber true, depois temos um end mostrando que acabou a condição. Então vamos imprimir na tela o valor da string4 e o valor de b, e no final um end sinalizando o fim da repetição while. Antes de executar tente entender quais valores serão apresentados na tela, quantas repetições teremos e tudo mais. </p>
+        <p>Veja o outro exemplo: </p>
+        <img src="/images/while2.PNG" alt="outra repetição while">
+        <p>Na repetição acima temos b = 10 e c = 0. Então temos a repetição: enquanto verdadeiro faça (Esse true vai fazer ficar repetindo para Sempre a não ser que ocorra um break)... c = c + b, local b = c, nesse caso local b vai ser uma variável local que só vale dentro da repetição, fora da repetição o valor do b vai ser o mesmo que antes. Então imprime o valor do b, como está dentro da repetição vai receber local b. Então temos uma condição se b == 100 então break, o break quebra a repetição, saí da repetição. Depois temos um end finalizando a condição e um end finalizando a repetição. Depois, só para deixar claro imprimimos um b na tela mostrando que o valor de b vai voltar a ser o que era antes da repetição, não vai ser mais o local b. </p>
+        <p>Nessa repetição então vamos fazer com que o c receba seu valor mais o valor do b, vai sempre aumentando e é importante destacar que esse b como vem antes do local b = c vai receber o valor do b antes do parênteses, ou seja, 10, e criamos então a variável local b que vai receber c e imprimimos o b, que dentro da repetição é o local b. Se b == 100 então sai da repetição e no final vai imprimir o valor do b fora da repetição. Esse vai ser o resultado:   </p>
+        <img src="/images/resultadowhile.PNG" alt="resultado do while">
+        <p></p>
+        <a href="/menu/articles/programming/luamaraton.html">Voltar para a página anterior</a>
+    </div>
+</body>
+</html>
