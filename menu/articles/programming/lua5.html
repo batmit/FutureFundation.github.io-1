@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 - Lua</title>
+    <link rel="stylesheet" href="/menu/main.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>
+                Aula 5 - Lua
+            </h1>
+            <h3>
+                writer: Daniel Matos
+            </h3>
+        </header>
+        
+        <strong>Nessa aula veremos a estrutura de repetição for. </strong>
+        
+        <p> O for em Lua é bem parecido com o do python. Veja o exemplo abaixo:</p>
+        
+        <img src="/images/for.PNG" alt="estrutura de repetição for">
+        
+        <p>O for é equivalente a um para + condição + faça. No exemplo acima o primeiro for tem o i = 1, 10 do. Como o for é uma reptição precisamos usar uma condição, Nesse cado usamos o i recebendo 1, 10. Ou seja, o i recebe 1, 2, 3, 4, 6, 7, 8, 9 e 10, como colocamos ele após o for sabemos que vai repetir 10 vezes sendo que cada vez o valor do i vai aumentar, até chegar no dez e parar a repetição. Nesse caso colocamos dentro da repetição para imprimir o valor de i, lembrando ele começa com i e depois de cada reétição vai aumentar 1 até chegar no dez. Então temos o end sinalizando o fim da repetição</p>
+
+        <p>No próximo for temos então uma coisa interessante. for i = 10, 1, -1 do. Temos o for i recebendo 10, 11 e o , -1. Esse -1 é o terceiro elemento e é unm parâmetro, -1 quer dizer que vamos do 10 até o 1. Você deve ter percebido que a posição 10 e 1 estão invertidas se comparando com a repetição de cima, isso porque sinalizamos que a repetição vai começar no 10 e terminar no 1, mas se fizermos isso a repetição não vai rodar isso porque a menos que coloquemos o -1 como parâmentro o computador não vai fazer uma repetição ao contrário, quando colocamos -1 sinalizamos que queremos uma repetição que comece com um número maior e que vá cada vez mais diminiundo. Dentro da repetição iremos imprimir o valor de i que é 10, 9, 8, 7, 6, 5, 4, 3, 2, 1. </p>
+
+        <p>Repare que se você tentar fazer 10, 1 sem o -1 não vai funcionar, assim como se você tentar fazer o 1, 10, -1 não vai funcionar. Isso porque devemos colocar o valor de início primeiro e depois o final, se o primeiro valor foi maior que o segundo devemos colcoar o -1 para sinalizar que queremos começar com o valor maior e ir dimnuindo, mas não vai funcionar se você quiser colocar o -1 e colocar o 1 em primeiro e o 10 em segundo, você sinalizou que vai querer começar com o valor maior mas o valor que você colocou em primeiro é menor, aí ele não vai rodar. </p>
+
+        <p>Experimente algumas combinações de números diferentes. Só uma amostra do poder do for vai ser a tabuada a seguir: </p>
+
+        <img src="/images/tabuadalua.PNG" alt="tabuada em Lua">
+
+        <p>Sim, fazer uma tabuada em Lua é bem simples. Basta raciocinar. Primeiro temos um for i = 1, 10 do. Até aqui nada diferente, teremos 10 repetições sendo que o valor de 1 vai aumentar em cada uma delas, lembre-se de sempre colocar o end. Depois temos outro for dentro do for. for d = 1, 10 do. Teremos novamente 10 repetições com o d aumentando em cada uma delas, porém, ali mora o pulo do gato: a cada repetição de i teremos 10 repetições de d, isso porque o d está dentro da repetição i, se você tirasse a repetição de ela iria repetir 10 vezes apenas uma vez, mas como colocamos ela dentro do i a cada repetição do i a repetição d vai ser executada, dessa forma podemos aproveitar e fazer a tabuada dos 10 primeiros números de uma maneira bem simples e fácil: iremos imprimir na tela d mais os dois pontinhos que você deve se lembrar da última aula, + a string X mais o valor de i mais a string = mais o calor de d vezes o valor de i. E então temos um end.</p>
+
+        <p>Antes de continuar lendo execute o progama e tente entendé-lo. Teremos dois níveis de repetição aqui. Vamos fazer um scanning(escanear) o progama: Temos o i valendo 1 na primeira repetição, então iniciamos a repetição d, teremos o d valendo 1 na primeira repetição do d e o i valendo 1 também. Então imprimimos i * d é igual a 1. Depois então teremos mais uma repetição do d, lembrando que o d executa dez vezes dentro da repetição i, o d então vale 2 e o i continua valendo 1. Então 2, 3, 4 e assim por diante até o 10. Assim que terminar de imprimir o dez então a repetição acaba, o d já vale 10, e então voltamos para a repetição i que começa de novo com o i valendo 2, então temos novamente a execução da repetição d com o i valendo 2 e o d valendo 1. Então depois das 10 repetições do d teremos mais uma repetição do i até que o i chegue a dez. Assim teremos imprimido toda a tabuada de 1 a 10. Se você está com dificuldade de entender tente imaginar como seria a repetição d fora da repetição i, quando eu digo imagine eu digo faça, dá um ctrl-C e ctrl-V fora da repetição i, abra um novo arquivo em Lua, qualquer coisa. Veja que o d vai executar normalmente dez vezes. Agora coloque novamente a repetição d dentro da repetição i, ele vai rodar da mesma forma só que a cada repetição i, ou seja, 10 vezes.             </p>
+
+        <p>Espero que tenha ficado claro, faça alguns exercícios, mude o d para 1, 100 e veja o que aconteça, depois mude para 1, 1000, mude o i e tente entender o que o progama fará antes de executá-lo, lembre-se que o computador é um pau mandado, ele vai fazer apenas o que você escreve para ele e do jeito que ele você escreveu, nem mais nem menos. Somente as i.a que entregam mais. </p>
+
+        <a href="./luamaraton.html">Voltar para a página anterior</a>
+    </div>
+</body>
+</html>
