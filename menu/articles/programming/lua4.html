@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - Lua</title>
+    <link rel="stylesheet" href="/menu/main.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>
+                Aula 4 - Lua
+            </h1>
+            <h3>
+                writer: Daniel Matos
+            </h3>
+        </header>
+        <p>Complementando a aula anterior vamos ver um pouco mais sobre variáveis locais e globais, assim como veremos um pouco sobre manipulação de strings. Veja o progama abaixo: </p>
+
+        <img src="/images/complemento.PNG" alt="complemento da aula passada sobre variáveis locais e gerais">
+        
+        <p>No exemplo acima temos que a recebe 20 e b recebe 50. O s já é um valor diferente, ele vai receber o b + "" + o a. O .. usamos para adicionar variáveis e números, como se fosse um +. Nos dois primeiros prints temos um exemplo disso: "O valor de a é: " .. a, imprimira na tela a string, "O valor de a é", e também o a, o valor de a. Não podemos colocar o a logo em seguida da string, temos que usar .. como se fosse um adicionar dentro do print. </p>
+        <p>Depois veja o valor de s. .. é um tipo de manipulação de strings onde podemos adicionar essa variável a um print ou a uma outra variável, muito útil aliás. Depois temos c recebe 2. Então uma condição, se c for maior do que 0 então a variável b local recebe o valor de c, c recebe c + 1, a variável local de c recebe b e então imprimimos uma string mais o valor de c, que como está dentro da condição recebe o valor local de c. Então temos o end e imprimi uma string mais o valor global, fora da repetição, de c. </p>
+        <p>Vamos entender o que aconteceu aqui: a variável b local recebe c, que vale 2. Então o c passa a valer c + 1, que é 3. Esse c é a variável global, visto que não adicionamos uma variável local ainda. Então adicionamos a variável c local recebe b, que vale o valor de c antigo, 2. Então teremos dois prints, um mostrando a variável local de c, que vale 2, e a variável global de c, que vem antes da variável local de c, ou seja, 3. </p>
+        <p>Esse é um exercício que pode parecer complicado mas é bem simples assim que você o analisa. Lembre-se de colocar o end após cada condição. É bom você sempre diferenciar a variável local e global como sendo variáveis diferentes, porque de fato são. é extremamente útil e simples, não atoa Lua é bem utilizado como uma linguagem suporte para muitos sistemas e jogos. </p>
+        
+        <a href="/index.html">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
