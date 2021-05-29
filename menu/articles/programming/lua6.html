@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - Lua</title>
+    <link rel="stylesheet" href="/menu/main.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>
+                Aula 6 - Lua
+            </h1>
+            <h3>
+                writer: Daniel Matos
+            </h3>
+        </header>
+        <strong>Funções em Lua</strong>
+
+        <p>As funções em Lua são bem parecidos com as funções em Python, veja o exemplo a seguir: </p>
+        <img src="/images/function.PNG" alt="funções em Lua">
+        <p>Primeiro temos function especificando que essa é uma função, depois temos o nome da função soma e temos (x, y), a função recebe os valores x e y, que veremos mais para frente. Na função retomamos o valor return x + y, que retorna o valor de x + y. Depois um end mostrando o fim da função e um print(soma(1, 2)). </p>
+        <p>A função soma pega os valores de x e y e retorna x + y, os valores de x e y eles não foram definidos ainda temos apenas a função mostrando o que vai fazer com dois valores que serão pegados. Depois do end temos aí sim a chamada da função, temos um print que imprime na tela e dentro dele temos a chamada da função soma com dois valores: soma(1, 2). Com soma chamamos o nome da função, que está bem do lado da palavra function, e enviamos dois valores para ela 1 e 2, sendo que 1 recebe x e 2 recebe y. Logo, quando a função rodar ela vai pegar esses dois valores e vai retornar x + y. </p>
+        <p>Se não tivesse o print() não apareceria nada, isso porque o return não imprime na tela, ele apenas retorna, se você tirar o print não vai funcionar. Porém, se você tirar o return e colocar print(x + y) dentro da função você vai poder só chamá-la com soma(1, 2) sem print sem nada. Tente isso, depois tente mudar os valores de 1 e 2, lembrando que o primeiro valor vai sempre ser x e o segundo y, a menos que você mude a ordem lá em cima. Olhe exemplos de função: </p>
+
+        <p>------------------------</p>
+
+        <p>function imprime(x): -- dou o nome da função de imprime e faço ela receber um valor qualquer que eu vou chamar de x</p>
+        <p>     print(x) -- vai imprimir o valor, sempre lembrando de dar um tab para ficar mais para frente</p> 
+        <p>end</p>
+        <p>imprime("lele") -- o lele vai ser enviado e vai ser o x</p> 
+        <p>------------------------</p>
+        
+        <p>function multiplica(lele, dede)
+            <br>
+            return lele * dede
+        <br>
+        end
+        <br>
+        print(multiplica(10, 20))     --vai chamar a função dentro de um print enviando de valores 10, no lele, e 20 no dede.       </p>
+        <p>  -- a função vai retornar um valor esse vai ser imprimido na tela. </p>  
+        <p>------------------------</p>
+
+        <p>Agora vou mostrar uma função um pouco mais avançada: (lembre-se de sempre tentar novas combinações, de fato experimentar e não apenas ficar lendo rapidamente, copie os códigos, entenda eles, tente mudá-los e refaze-los, etc. )</p>
+        <img src="/images/fatorial.PNG" alt="fatorial em Lua"> <small>Essa é uma função de cálculo de fatorial, tente entedé-la. Lembre-se que o x é somente um valor que será enviado mais a frente.  </small>
+
+        <p>Em Lua você pode sim pegar variáveis globais, ou seja, variáveis de fora da função, diferentemente do python, e você pode até mudar as variáveis de fora da função como mostrado abaixo: (cuidado para não atrapalhar seus progamas em outras linguagens.) </p>
+
+        <img src="/images/mudalua.PNG" alt="Função para mudar um valor em Lua">
+
+        <p>Veja a função acima, quando alteramos o a acaba que alteramos também seu valor global, o de fora da função, para alterar apenas o valor local do a se deve usar um local antes do a, veja o exemplo abaixo: (se você não conhece outra linguagem pode estar boiando, mas isso sim tem uma diferença muito grande. ) </p>
+        <img src="/images/alocal.PNG" alt="usando variáveis locais em Lua">
+        <p>O computador de fato trata as funções locais e globais como totalmente diferentes, mesmo que sejam ambas apenas "a". </p>
+        <a href="./luamaraton.html">Voltar para a página anterior</a>
+    </div>
+</body>
+</html>
