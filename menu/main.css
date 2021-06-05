@@ -75,7 +75,11 @@ h1{
         line-height: 0.5rem;
         padding: 1rem;
 
-    }   
+    }  
+    
+    #img{
+        text-align: right;
+    }
 
 }
 

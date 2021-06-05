@@ -180,4 +180,8 @@ footer h2, p {
         display: block;
         text-align: center;
     }
+
+    #img{
+        text-align: right;
+    }
 }
