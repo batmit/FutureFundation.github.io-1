@@ -22,13 +22,15 @@ body{
 #articles{
     padding: 2rem;
 
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
 
 }
 
 a{
     padding: 2rem;
-    margin: 2rem;
+    margin-bottom: 2rem;
     background-color: azure;
     text-decoration: none;
 }
