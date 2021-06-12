@@ -49,4 +49,8 @@ a:hover{
     #img{
         text-align: right;
     }
+
+    a{
+        padding: 1;
+    }
 }
