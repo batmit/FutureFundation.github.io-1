@@ -6,9 +6,9 @@ body{
 
     border-radius: 0.8rem;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 
-    background-color: #194caa;
+    background-color: rgb(36, 161, 130);
 
 
 }
@@ -19,7 +19,7 @@ body{
 
 #all{
 
-    background-color: white;
+    background-color: rgb(223, 211, 211);
 
 }
 
@@ -38,7 +38,7 @@ img{
 
 p{
 
-    font-family: 'Poppins';
+    font-family: 'Ubuntu';
 
 }
 a{
@@ -59,7 +59,7 @@ a{
 
 a:hover{
 
-    background-color:rgb(80, 158, 231);
+    background-color:#F0FFFF;
 
 }
 
@@ -72,16 +72,16 @@ h1{
 }
 
 audio {
--webkit-transition:all 0.5s linear;
--moz-transition:all 0.5s linear;
--o-transition:all 0.5s linear;
-transition:all 0.5s linear;
--moz-box-shadow: 2px 2px 4px 0px #006773;
--webkit-box-shadow:  2px 2px 4px 0px #006773;
-box-shadow: 2px 2px 4px 0px #006773;
--moz-border-radius:7px 7px 7px 7px ;
--webkit-border-radius:7px 7px 7px 7px ;
-border-radius:7px 7px 7px 7px ;
+    -webkit-transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    transition:all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow:  2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius:7px 7px 7px 7px ;
+    -webkit-border-radius:7px 7px 7px 7px ;
+    border-radius:7px 7px 7px 7px ;
 }
 
 audio:hover, audio:focus, audio:active {
@@ -117,7 +117,7 @@ transform: scale(1.05);
 @media (prefers-color-scheme: dark) {
     #all{
 
-        background-color: black;
+        background-color: rgb(90, 73, 73);
     
     }
 

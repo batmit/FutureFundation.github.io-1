@@ -6,9 +6,9 @@ body{
 
     border-radius: 0.8rem;
 
-    font-family: 'Ubuntu', arial;
+    font-family: 'Poppins', sans-serif;
 
-    background-color: rgb(36, 161, 130);
+    background-color: #F0FFFF;
 
 
 }
@@ -19,7 +19,7 @@ body{
 
 #all{
 
-    background-color: rgb(223, 211, 211);
+    background-color: white;
 
 }
 
@@ -37,10 +37,10 @@ img{
 }
 
 p{
-    font-size: 20px;
-    font-family: 'Ubuntu', arial;
-}
 
+    font-family: 'Poppins';
+
+}
 a{
     border: 2px solid black;
 
@@ -117,7 +117,7 @@ transform: scale(1.05);
 @media (prefers-color-scheme: dark) {
     #all{
 
-        background-color: rgb(90, 73, 73);
+        background-color: rgb(36, 161, 130);
     
     }
 

@@ -4,8 +4,6 @@
 
     margin: 2rem;
 
-    background-color: rgb(36, 161, 130);
-
 }
 
 audio {
@@ -190,6 +188,6 @@ footer h2, p {
 
 @media (prefers-color-scheme: dark) {
     #all{
-        background-color:rgb(36, 161, 130);
+        background-color:black;
     }
 }

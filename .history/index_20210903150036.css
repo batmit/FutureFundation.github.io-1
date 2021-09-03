@@ -4,8 +4,6 @@
 
     margin: 2rem;
 
-    background-color: rgb(36, 161, 130);
-
 }
 
 audio {
@@ -39,7 +37,7 @@ img{
 
 body{
 
-    background-color: #F0FFFF;
+    background-color: rgb(250, 235, 215);
 
 }
 
@@ -185,11 +183,5 @@ footer h2, p {
 
     #img{
         text-align: right;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    #all{
-        background-color:rgb(36, 161, 130);
     }
 }

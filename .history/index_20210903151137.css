@@ -4,8 +4,6 @@
 
     margin: 2rem;
 
-    background-color: rgb(36, 161, 130);
-
 }
 
 audio {
@@ -39,7 +37,8 @@ img{
 
 body{
 
-    background-color: #F0FFFF;
+    background-color: #F0FFFF
+    ;
 
 }
 
