@@ -1,0 +1,57 @@
+#all{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 3px solid rgb(168, 168, 20);
+    border-radius: 0.8rem;    
+}
+
+header{
+    background-color: red;
+}
+
+h1{
+    font-family: 'Yellowtail', cursive;
+    margin-bottom: 3rem;
+}
+
+
+body{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4424415.jpg&f=1&nofb=1);
+}
+
+#articles{
+    padding: 2rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+
+}
+
+a{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: azure;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(173, 233, 233);
+}
+
+#citação{
+    margin: 3rem;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 900px){
+    #img{
+        text-align: right;
+    }
+
+    a{
+        padding: 1;
+    }
+}
